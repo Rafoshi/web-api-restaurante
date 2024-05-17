@@ -8,11 +8,22 @@
     ".NETCoreApp,Version=v7.0": {
       "web-api-restaurante/1.0.0": {
         "dependencies": {
+          "Dapper": "2.1.35",
           "Microsoft.AspNetCore.OpenApi": "7.0.7",
+          "Microsoft.Data.Sqlite.Core": "8.0.5",
+          "SQLitePCLRaw.bundle_e_sqlcipher": "2.1.8",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
           "web-api-restaurante.dll": {}
+        }
+      },
+      "Dapper/2.1.35": {
+        "runtime": {
+          "lib/net7.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.35.13827"
+          }
         }
       },
       "Microsoft.AspNetCore.OpenApi/7.0.7": {
@@ -26,12 +37,166 @@
           }
         }
       },
+      "Microsoft.Data.Sqlite.Core/8.0.5": {
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.1.8"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Data.Sqlite.dll": {
+            "assemblyVersion": "8.0.5.0",
+            "fileVersion": "8.0.524.21704"
+          }
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
       "Microsoft.OpenApi/1.4.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
             "assemblyVersion": "1.4.3.0",
             "fileVersion": "1.4.3.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.bundle_e_sqlcipher/2.1.8": {
+        "dependencies": {
+          "SQLitePCLRaw.lib.e_sqlcipher": "2.1.8",
+          "SQLitePCLRaw.provider.e_sqlcipher": "2.1.8"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll": {
+            "assemblyVersion": "2.1.8.2226",
+            "fileVersion": "2.1.8.2226"
+          }
+        }
+      },
+      "SQLitePCLRaw.core/2.1.8": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {
+            "assemblyVersion": "2.1.8.2226",
+            "fileVersion": "2.1.8.2226"
+          }
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlcipher/2.1.8": {
+        "runtimeTargets": {
+          "runtimes/browser-wasm/nativeassets/net7.0/e_sqlcipher.a": {
+            "rid": "browser-wasm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm/native/libe_sqlcipher.so": {
+            "rid": "linux-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm64/native/libe_sqlcipher.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-armel/native/libe_sqlcipher.so": {
+            "rid": "linux-armel",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-mips64/native/libe_sqlcipher.so": {
+            "rid": "linux-mips64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-musl-arm/native/libe_sqlcipher.so": {
+            "rid": "linux-musl-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-musl-arm64/native/libe_sqlcipher.so": {
+            "rid": "linux-musl-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-musl-s390x/native/libe_sqlcipher.so": {
+            "rid": "linux-musl-s390x",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-musl-x64/native/libe_sqlcipher.so": {
+            "rid": "linux-musl-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-ppc64le/native/libe_sqlcipher.so": {
+            "rid": "linux-ppc64le",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-s390x/native/libe_sqlcipher.so": {
+            "rid": "linux-s390x",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libe_sqlcipher.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x86/native/libe_sqlcipher.so": {
+            "rid": "linux-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/maccatalyst-arm64/native/libe_sqlcipher.dylib": {
+            "rid": "maccatalyst-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/maccatalyst-x64/native/libe_sqlcipher.dylib": {
+            "rid": "maccatalyst-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-arm64/native/libe_sqlcipher.dylib": {
+            "rid": "osx-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libe_sqlcipher.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-arm/native/e_sqlcipher.dll": {
+            "rid": "win-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-arm64/native/e_sqlcipher.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/e_sqlcipher.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/e_sqlcipher.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlcipher/2.1.8": {
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.1.8"
+        },
+        "runtime": {
+          "lib/net6.0/SQLitePCLRaw.provider.e_sqlcipher.dll": {
+            "assemblyVersion": "2.1.8.2226",
+            "fileVersion": "2.1.8.2226"
           }
         }
       },
@@ -72,7 +237,8 @@
             "fileVersion": "6.5.0.0"
           }
         }
-      }
+      },
+      "System.Memory/4.5.3": {}
     }
   },
   "libraries": {
@@ -81,12 +247,26 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Dapper/2.1.35": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YKRwjVfrG7GYOovlGyQoMvr1/IJdn+7QzNXJxyMh0YfFF5yvDmTYaJOVYWsckreNjGsGSEtrMTpnzxTUq/tZQw==",
+      "path": "dapper/2.1.35",
+      "hashPath": "dapper.2.1.35.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.OpenApi/7.0.7": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-6E1I154QELFjQ4RvSWwZAlZrvB2Dy3aOkcYAQ+E4NsyqwKqFbG10HeWp/WJfq+2btUz1dKzmNMwnADf8WBk/0w==",
       "path": "microsoft.aspnetcore.openapi/7.0.7",
       "hashPath": "microsoft.aspnetcore.openapi.7.0.7.nupkg.sha512"
+    },
+    "Microsoft.Data.Sqlite.Core/8.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JMGBNGTPsrLM14j5gDG2r5/I1nbbQd1ZdgeUnF7uca8RHYin6wZpFtQNYYqOMUpSxJak55trXE9B8/X2X+pOXw==",
+      "path": "microsoft.data.sqlite.core/8.0.5",
+      "hashPath": "microsoft.data.sqlite.core.8.0.5.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",
@@ -101,6 +281,34 @@
       "sha512": "sha512-rURwggB+QZYcSVbDr7HSdhw/FELvMlriW10OeOzjPT7pstefMo7IThhtNtDudxbXhW+lj0NfX72Ka5EDsG8x6w==",
       "path": "microsoft.openapi/1.4.3",
       "hashPath": "microsoft.openapi.1.4.3.nupkg.sha512"
+    },
+    "SQLitePCLRaw.bundle_e_sqlcipher/2.1.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1AKZHZfUqiAZXZpSkgXA8VHT1RaCK1Qk+uO8F7crp7JZ8OeisM2yUzv/XgQvezcpSD+Qkt29aqSxfwLbenJpIA==",
+      "path": "sqlitepclraw.bundle_e_sqlcipher/2.1.8",
+      "hashPath": "sqlitepclraw.bundle_e_sqlcipher.2.1.8.nupkg.sha512"
+    },
+    "SQLitePCLRaw.core/2.1.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jre/gajSA2Bz3kzYD8DxMpJehAtxY5/V2UE/OR0v48zY122hJOXBvGumV+/zEMg1l0lEVFJfJCpkJGQp7GBwRw==",
+      "path": "sqlitepclraw.core/2.1.8",
+      "hashPath": "sqlitepclraw.core.2.1.8.nupkg.sha512"
+    },
+    "SQLitePCLRaw.lib.e_sqlcipher/2.1.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aDB+X1h+15fYQmBl7Z/9iMaUtzKUpeM37Cz0rF2PItTiTXKcpt+a778gJ4oyRfW5r5FCKdltYMD91V3AmJfnrQ==",
+      "path": "sqlitepclraw.lib.e_sqlcipher/2.1.8",
+      "hashPath": "sqlitepclraw.lib.e_sqlcipher.2.1.8.nupkg.sha512"
+    },
+    "SQLitePCLRaw.provider.e_sqlcipher/2.1.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OuqmtUA+tlpJP12gEzgnMCV3ATiLJI8+1NMsFjGsqEJStpKWu/bUlG6iYtXgOQ9gHqkjBYwzpZMGrOPFDcTvRg==",
+      "path": "sqlitepclraw.provider.e_sqlcipher/2.1.8",
+      "hashPath": "sqlitepclraw.provider.e_sqlcipher.2.1.8.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.5.0": {
       "type": "package",
@@ -129,6 +337,13 @@
       "sha512": "sha512-OvbvxX+wL8skxTBttcBsVxdh73Fag4xwqEU2edh4JMn7Ws/xJHnY/JB1e9RoCb6XpDxUF3hD9A0Z1lEUx40Pfw==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.5.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
     }
   }
 }
